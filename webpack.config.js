@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
-const webpack = require('webpack');
-const dotenv = require('dotenv');
+const webpack = require('webpack')
+const dotenv = require('dotenv')
 const fs = require('fs')
 
 const env = dotenv.config().parsed
@@ -16,7 +16,7 @@ module.exports = {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
-  devtool: 'cheap-module-source-map',
+  // devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {
@@ -48,6 +48,7 @@ module.exports = {
       }
     ]
   },
+  performance: { hints: false },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true,
