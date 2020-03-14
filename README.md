@@ -12,6 +12,19 @@ Create a HTML UI that that uses the REST API created in Task 1 to:
 - Bump the build number for a given bundle identifier.
 - Force set the build number for a given bundle identifier.
 
+## Server
+
+### Scripts:
+
+1. Build scripts
+   ```
+   yarn build
+   ```
+2. Run
+
+   - `start:dev`: Run using webpack devServer
+   - `start`: Run using a node/express server
+
 ### Tech Stack
 
 Please use the following libraries/frameworks/tools to solve this challenge.
