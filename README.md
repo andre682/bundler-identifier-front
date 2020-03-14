@@ -24,6 +24,13 @@ Create a HTML UI that that uses the REST API created in Task 1 to:
 
    - `start:dev`: Run using webpack devServer
    - `start`: Run using a node/express server
+   - 
+### Environment variables:
+
+```
+API_URL=https://sagomini-challenge-api.herokuapp.com/api
+```
+
 
 ### Tech Stack
 
