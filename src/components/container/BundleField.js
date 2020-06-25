@@ -14,7 +14,7 @@ const mapDispatchToProps = dispatch => {
   return {
     handleOnChange: value => {
       dispatch(typeBundleIdentifier(value))
-      const bundleIdentifierRegExp = /^[a-z][a-z0-9_]*(\.[a-z0-9_]+)+[0-9a-z_]$/i
+      const bundleIdentifierRegExp = /^[a-z][a-z0-9_]+\.[a-z0-9_]+\.[0-9a-z_]+$/i
       if (value.length > 4) {
         if (RegExp(bundleIdentifierRegExp).test(value)) {
           getBundleIdentifier({ bundleId: value })(dispatch)

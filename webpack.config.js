@@ -16,7 +16,7 @@ module.exports = {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
-  // devtool: 'cheap-module-source-map',
+  devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {
